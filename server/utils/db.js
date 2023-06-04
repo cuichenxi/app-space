@@ -8,6 +8,7 @@ let dbUrl = `mongodb://${config.dbHost}:${config.dbPort}`;
 // }
 
 console.log(dbUrl)
+console.log('xxxxxxxx')
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
         user: config.dbUser,
