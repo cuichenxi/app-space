@@ -116,7 +116,7 @@ AuthRouter.initAdminAccount().then(r => {
 let appServer
 if (config.host) {
     log.debug("start app host:",config.host);
-    appServer = app.listen(3000, "0.0.0.0",() => {
+    appServer = app.listen(config.port,config.host,() => {
         console.log(`App is listening on ${config.port}.`);
     });
 }else {
