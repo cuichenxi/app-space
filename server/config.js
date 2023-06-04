@@ -7,6 +7,7 @@ let path = require('path');
 const config = {
   baseUrl: process.env.APP_SPA_DOMAIN || "http://127.0.0.1:80", //baseUrl应用请求的url地址,比如https://appspace
   port: process.env.APP_SPA_PORT || '80', //server运行的端口
+  host: process.env.APP_SPA_HOST || '0.0.0.0', //host railway 
   // baseUrl: process.env.APP_SPA_DOMAIN || "http://127.0.0.1:8085", //baseUrl应用请求的url地址,比如https://appspace
   // port: process.env.APP_SPA_PORT || '8085', //server运行的端口
 
